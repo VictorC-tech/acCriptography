@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="name" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">e-mail</ion-label>
+    <ion-input [(ngModel)]="email" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">nota</ion-label>
+    <ion-input [(ngModel)]="nota" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Chave Secreta</ion-label>
+    <ion-input [(ngModel)]="secretKey" type="text"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="encryptMessage()">Criptografar</ion-button>
+  <ion-item>
+    <ion-label>Mensagem Criptografada</ion-label>
+    <ion-textarea [(ngModel)]="encryptedMessage" readonly></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="decryptMessage()">Descriptografar (te levara para outra pagina)</ion-button>
+</ion-content>

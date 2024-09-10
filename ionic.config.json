@@ -1,0 +1,7 @@
+{
+  "name": "ac3triRCS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
