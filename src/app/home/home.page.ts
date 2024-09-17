@@ -19,7 +19,7 @@ export class HomePage {
   encryptMessage() {
     if (this.name && this.email && this.nota && this.secretKey) {
       const encrypted = CryptoJS.AES.encrypt(this.name+"\n"+this.email+"\n"+this.nota, this.secretKey).toString();
-      this.encryptedMessage = encrypted;
+      this.encryptedMessage = encodeURIComponent(encrypted);
     }
   }
   decryptMessage() {
